@@ -1,0 +1,29 @@
+.filterWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-medium);
+  margin-bottom: 4px;
+}
+
+.select {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  padding: 11px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-background-white);
+  color: var(--color-text-dark);
+  transition: var(--transition-ease);
+  min-width: 200px;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.2);
+}

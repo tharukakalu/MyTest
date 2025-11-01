@@ -1,0 +1,25 @@
+.filters {
+  display: flex;
+}
+
+.searchInput {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  padding: 10px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 300px;
+  transition: var(--transition-ease);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+  .searchInput {
+    width: 100%;
+  }
+}

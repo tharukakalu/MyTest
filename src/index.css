@@ -1,13 +1,47 @@
+/* Global Theme File - Updated to match viktor.ai */
+:root {
+  /* Colors */
+  --color-primary-blue: #0073e6; /* VIKTOR's brand blue */
+  --color-text-dark: #212529; /* Main text color */
+  --color-text-medium: #6c757d; /* Lighter text for metadata */
+  --color-text-light: #adb5bd;
+  --color-background-white: #ffffff;
+  --color-background-light: #f8f9fa; /* Page background */
+  --color-border: #e9ecef; /* Card borders */
+  --color-error: #e53e3e;
+
+  /* Typography */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+
+  /* Sizing & Radius */
+  --radius-sm: 4px; /* Smaller radius for pills */
+  --radius-md: 8px; /* Card radius */
+
+  /* Shadows */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 6px 16px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-ease: all 0.2s ease-in-out;
+}
+
 body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Add a global link style */
+a {
+  color: var(--color-primary-blue);
+  text-decoration: none;
+  transition: var(--transition-ease);
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -1,0 +1,49 @@
+.blogPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* For mobile */
+  gap: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin: 0;
+}
+
+.mainContent {
+  min-height: 50vh;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-background-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 40px;
+}
